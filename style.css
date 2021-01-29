@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+body{
+    background: rgb(12, 0, 0);
+}
+main{ 
+   
+    background-color: black;
+    justify-content: space-between;
+    left:0;
+    position: absolute;
+    width: 100%;
+    top:0;
+    align-items: center;
+     display:flex;
+    padding: 10px 40px;
+    position: fixed;
+    z-index: 50;
+   
+}
+.logo img{
+    width: 100px;;
+}
+.nav{
+    display: flex;
+    
+}
+.nav li{
+    margin: 0px 10px;
+    list-style: none;
+}
+.nav li a {
+    color:aliceblue;
+    text-decoration: none;
+   font-weight: bold;
+   letter-spacing: 1px;
+    font-family: "Poppins",sans-serif;
+}
+.nav li:hover a{
+      color: #e50914;
+}
+.search{
+    position: relative;
+  width: 220px;
+  height: 30px;
+}
+.search input{
+   
+   position: relative;
+   right: 10px;
+    width: 100%;
+    height: 100%;
+    color:white;
+    background-color: transparent;
+    border: 1px solid rgba(61, 58, 58, 0.5);
+    outline: none;
+    border-radius: 2px;
+    padding: 0px 0px 0px 50px;
+    cursor: pointer;
+}
+.search input::placeholder{
+    color:rgb(245, 245, 228);
+   
+}
+.search .fa-search {
+ 
+  position: absolute;
+  top:7px;
+  left: 0px;
+  transform: rotateY(180deg);
+  padding-right: 10px;
+  color: white;
+}
+
+.fl .mp{  
+ margin-top: 20px;
+  width: 100%;
+  height: 100%;
+ object-fit:cover;
+ 
+}
+.fl .title-logo{
+   width: 110%;
+}
+.fl .content{
+     
+    position: absolute;
+    top:30%;
+    left: 50px;
+    color: rgb(253, 249, 249);
+    max-width: 450px;
+    text-align: justify;
+    
+}
+
+.content h1{
+  margin-left:7px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.fl{
+    color:aliceblue;
+}
+h5{
+    color: gray;
+     display: flex;
+     margin: 4px 5px;
+}
+ span{
+     margin: 0px 10px;
+     margin-left: 1px;
+     padding-right: 10px;
+     border-right: 1px solid gray;
+}
+
+span:last-child{
+    border: 0;    
+}
+span:nth-child(2){
+    color:gray;
+    
+   padding: 0 4px;
+  
+   border-radius: 2px;
+   border: 1px  solid gray;
+   box-sizing: content-box;
+   width: 5%;
+   padding-left: 13px;
+   position: relative;
+   margin-right: 8px;
+}
+span:nth-child(3){
+    border-left: 1px solid gray;
+   padding-left: 8px;
+}
+span a{
+ text-decoration: none;
+ color: gray;
+}
+.content .story{
+    font-family: 'Hind', sans-serif;
+    color:rgb(251, 251, 255);
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-left:5px;
+   
+}
+.content .cast span2{
+    color:gray;
+    margin-right: 2px;
+}
+.cast{
+    margin-top: 20px;
+    font-family:"Hind",sans-serif;
+}
+.trivia{
+    color: rgb(243, 234, 234);
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: rgba(10, 10, 10,0.6);
+    position: relative;
+    bottom: 40px;
+    border-top: 1px solid rgb(116, 114, 114);
+    border-bottom: 1px solid rgb(116, 114, 114);
+    letter-spacing: 2px;
+    margin-left: 50px;
+    margin-right: 50px;  
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    
+   
+    margin-left: 50px;
+   
+}
+.uniq{
+   
+    font-weight: bold;
+    margin-left:50px;
+    padding-bottom:10px;
+}
+
+
+gray{
+    color:gray;
+}
+.sub-topic{
+  display: flex;
+  flex-direction: column;
+  
+}
+.cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+   
+}
+.adj{
+    padding-top: 10px;
+}
+.cont2{
+        display: grid;
+        
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr) ;
+}
+.buttons{
+    margin-top: 50px;
+}
+.buttons a{
+    
+    text-decoration: none;
+    color: white;
+    
+}
+#play-button{
+        background-color: rgb(248, 9, 9);
+        padding:2px 12px 2px 12px;
+        border-radius: 1px;
+        
+      
+}
+.fa-play{
+    padding-right:2px;
+}
+.fa-plus{
+    padding-right: 3px;
+}
+#plus-button{
+    background-color: rgba(128,128,128,0.6);
+    padding:2px 12px 2px 12px;
+    border-radius: 1px;
+  
+}
+
+@media (max-width : 700px){
+   .fl .title-logo{
+       width: 70%;
+   }
+   
+}
